@@ -1,0 +1,30 @@
+services:
+  monorepo-boilerplate-db:
+    container_name: monorepo-boilerplate-db
+    image: postgres:13.5
+    restart: always
+    environment:
+      - POSTGRES_DB=monorepo-boilerplate_db
+      - POSTGRES_USER=monorepo-boilerplate_user
+      - POSTGRES_PASSWORD=monorepo-boilerplate_password
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+  redis:
+    container_name: monorepo-boilerplate-redis
+    image: redis:alpine
+    restart: always
+    ports:
+      - '6379:6379'
+
+  redisinsight:
+    container_name: monorepo-boilerplate-redisinsight
+    image: redis/redisinsight:latest
+    restart: always
+    ports:
+      - '6380:5540'
+
+volumes:
+  postgres:

@@ -7,6 +7,7 @@
 - Shadcn UI
 - TypeScript
 - React
+- GraphQL Code Generator
 
 ### Backend
 - NestJS
@@ -19,18 +20,21 @@
 - npm
 - Concurrently for development
 - Git for version control
+- GraphQL Code Generator CLI
 
 ## Development Setup
 1. Node.js environment
 2. PostgreSQL database
 3. npm for package management
 4. Git for version control
+5. GraphQL Code Generator configuration
 
 ## Technical Constraints
 - Node.js version compatibility
 - PostgreSQL version requirements
 - Browser compatibility for frontend
 - API versioning strategy
+- GraphQL schema synchronization
 
 ## Dependencies
 ### Root Dependencies
@@ -41,6 +45,10 @@
 - Shadcn UI
 - TypeScript
 - React
+- @graphql-codegen/cli
+- @graphql-codegen/client-preset
+- @graphql-codegen/typescript
+- @graphql-codegen/typescript-operations
 
 ### Backend Dependencies (apps/api)
 - NestJS
@@ -51,4 +59,5 @@
 ## Development Scripts
 - `npm run dev`: Run both frontend and backend concurrently
 - `npm run dev:api`: Run backend only
-- `npm run dev:web`: Run frontend only 
+- `npm run dev:web`: Run frontend only
+- `npm run codegen`: Generate GraphQL types and operations 
