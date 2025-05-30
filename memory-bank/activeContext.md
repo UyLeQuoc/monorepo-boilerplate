@@ -1,30 +1,32 @@
 # Active Context
 
 ## Current Focus
-- Initial project setup and configuration
-- Memory Bank documentation
-- Project structure establishment
-- GraphQL Code Generator integration
+- NestJS backend setup and configuration
+- GraphQL server implementation
+- Module structure establishment
+- Apollo Server configuration
 
 ## Recent Changes
-- Created Memory Bank documentation
-- Initialized project structure
-- Set up basic monorepo configuration
-- Added GraphQL Code Generator dependencies
+- Set up NestJS backend with Apollo Server
+- Configured GraphQL module with Apollo Driver
+- Implemented basic module structure (HelloModule, UsersModule)
+- Added Prisma module for database integration
+- Configured environment module for dynamic configuration
 
 ## Next Steps
-1. Set up frontend application (Next.js 15)
+1. Complete backend setup
+   - Implement Prisma schema and migrations
+   - Set up user authentication
+   - Define GraphQL resolvers
+   - Implement database models
+   - Add input validation
+
+2. Set up frontend application (Next.js 15)
    - Initialize Next.js project
    - Configure Shadcn UI
    - Set up TypeScript
    - Configure GraphQL Code Generator
    - Set up GraphQL client
-
-2. Set up backend application (NestJS)
-   - Initialize NestJS project
-   - Configure GraphQL
-   - Set up PostgreSQL connection
-   - Define GraphQL schema
 
 3. Configure development environment
    - Set up development scripts
@@ -33,17 +35,18 @@
    - Set up GraphQL type generation workflow
 
 ## Active Decisions
-- Using monorepo structure for better code sharing
-- Implementing GraphQL for API communication
-- Using Shadcn UI for consistent design
+- Using Apollo Server for GraphQL implementation
+- Implementing modular architecture with NestJS
+- Using Prisma for database operations
 - TypeScript for type safety across the stack
 - GraphQL Code Generator for type-safe operations
 
 ## Current Considerations
-- Development workflow optimization
+- Database schema design
+- Authentication implementation
+- API security measures
+- Performance optimization
 - Testing strategy
 - Documentation standards
-- Performance optimization
-- Security best practices
 - GraphQL schema synchronization
 - Type generation workflow 
