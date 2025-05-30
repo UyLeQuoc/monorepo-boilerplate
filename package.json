@@ -1,0 +1,33 @@
+{
+  "name": "monorepo-boilerplate",
+  "version": "1.0.0",
+  "description": "Using NextJs 15 and NestJS with Graphql, Postgres and Shadcn. With CI CD",
+  "keywords": [
+    "monorepo",
+    "monorepo-boilerplate",
+    "nextjs15",
+    "nestjs",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/UyLeQuoc/monorepo-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/UyLeQuoc/monorepo-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UyLeQuoc/monorepo-boilerplate.git"
+  },
+  "license": "ISC",
+  "author": "UyDev",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "cd apps/api && npm run start",
+    "dev:web": "cd apps/web && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
